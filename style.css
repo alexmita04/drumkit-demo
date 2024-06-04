@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url("images/background.jpg");
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+h1 {
+  font-size: 50px;
+  text-transform: lowercase;
+}
+
+.sounds-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sound-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #f2f3d9;
+  border-radius: 10px;
+  padding: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(191, 189, 193, 0.2);
+  transition: all 0.1s;
+}
+
+.sound-btn .key {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.sound-btn .sound-name {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.sound-active {
+  transform: scale(1.2);
+  border: 3px solid #6f9ceb;
+  color: #6f9ceb;
+  background-color: rgb(255, 251, 219, 0.3);
+}

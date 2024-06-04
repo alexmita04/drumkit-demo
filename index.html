@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Drumkit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Drumkit</h1>
+      <div class="sounds-btn-container">
+        <div data-key="a" class="sound-btn">
+          <div class="key">a</div>
+          <div class="sound-name">clap</div>
+        </div>
+        <div data-key="s" class="sound-btn">
+          <div class="key">s</div>
+          <div class="sound-name">hihat</div>
+        </div>
+        <div data-key="d" class="sound-btn">
+          <div class="key">d</div>
+          <div class="sound-name">kick</div>
+        </div>
+        <div data-key="f" class="sound-btn">
+          <div class="key">f</div>
+          <div class="sound-name">openhat</div>
+        </div>
+        <div data-key="g" class="sound-btn">
+          <div class="key">g</div>
+          <div class="sound-name">boom</div>
+        </div>
+        <div data-key="h" class="sound-btn">
+          <div class="key">h</div>
+          <div class="sound-name">ride</div>
+        </div>
+        <div data-key="j" class="sound-btn">
+          <div class="key">j</div>
+          <div class="sound-name">snare</div>
+        </div>
+        <div data-key="k" class="sound-btn">
+          <div class="key">k</div>
+          <div class="sound-name">tom</div>
+        </div>
+        <div data-key="l" class="sound-btn">
+          <div class="key">l</div>
+          <div class="sound-name">tink</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sounds">
+      <audio
+        data-key="a"
+        class="sound"
+        src="sounds/clap.wav"
+        type="audio/wav"
+      />
+      <audio
+        data-key="s"
+        class="sound"
+        src="sounds/hihat.wav"
+        type="audio/wav"
+      />
+      <audio
+        data-key="d"
+        class="sound"
+        src="sounds/kick.wav"
+        type="audio/wav"
+      />
+      <audio
+        data-key="f"
+        class="sound"
+        src="sounds/openhat.wav"
+        type="audio/wav"
+      />
+      <audio
+        data-key="g"
+        class="sound"
+        src="sounds/boom.wav"
+        type="audio/wav"
+      />
+      <audio
+        data-key="h"
+        class="sound"
+        src="sounds/ride.wav"
+        type="audio/wav"
+      />
+      <audio
+        data-key="j"
+        class="sound"
+        src="sounds/snare.wav"
+        type="audio/wav"
+      />
+      <audio data-key="k" class="sound" src="sounds/tom.wav" type="audio/wav" />
+      <audio
+        data-key="l"
+        class="sound"
+        src="sounds/tink.wav"
+        type="audio/wav"
+      />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
